@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил Васин](https://up.htmlacademy.ru/htmlcss/21/user/765251).
-* Наставник: [Кирилл Петров].
+* Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
 
 ---
 
