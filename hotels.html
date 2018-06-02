@@ -25,27 +25,27 @@
         <h1 class="visually-hidden">Подбор гостиницы</h1>
         <section class="hotel-choose">
             <h2 class="visually-hidden">Фильтр</h2>
-            <p>Инфраструктура</p>
             <form class="hotel-conditions">
-                <input type="checkbox" name="pool" id="pool-id">
-                <label for="pool-id">Бассейн</label><br>
-                <input type="checkbox" name="parking" id="parking-id">
-                <label for="parking-id">Парковка</label><br>
-                <input type="checkbox" name="wifi" id="wifi-id">
-                <label for="wifi-id">Wi-fi</label>   
+                <fieldset>
+                    <p>Инфраструктура: </p>
+                    <input type="checkbox" name="pool" id="pool-id">
+                    <label for="pool-id">Бассейн</label><br>
+                    <input type="checkbox" name="parking" id="parking-id">
+                    <label for="parking-id">Парковка</label><br>
+                    <input type="checkbox" name="wifi" id="wifi-id">
+                    <label for="wifi-id">Wi-fi</label> 
+                    <p>Тип жилья: </p>
+                    <input type="checkbox" name="hotel" id="hotel-id">
+                    <label for="hotel-id">Гостиница</label><br>
+                    <input type="checkbox" name="motel" id="motel-id">
+                    <label for="motel-id">Мотель</label><br>
+                    <input type="checkbox" name="apartment" id="apartment-id">
+                    <label for="apartment-id">Апартаменты</label>    
+                    <div class="value">
+                        <p>Стоимость в сутки (р):</p>
+                    </div>
+                </fieldset>
             </form>
-            <p>Инфраструктура</p>
-            <form class="hotel-type">
-                <input type="checkbox" name="hotel" id="hotel-id">
-                <label for="hotel-id">Гостиница</label><br>
-                <input type="checkbox" name="motel" id="motel-id">
-                <label for="motel-id">Мотель</label><br>
-                <input type="checkbox" name="apartment" id="apartment-id">
-                <label for="apartment-id">Апартаменты</label>    
-            </form>
-            <div class="value">
-                <p>Стоимость в сутки (р):</p>
-            </div>
         </section>
         <section class="hotel-selection">
             <h2 class="visually-hidden">Список гостиниц</h2>
@@ -61,20 +61,29 @@
                 <button type="button">стрелка вверх</button>
                 <button type="button">стрелка вниз</button>
             </div>
-            <div class="hotel-list">
-                <div class="hotel-item">
-                    <h3>Amara resort & spa</h3>
+            <ul class="hotel-list">
+                <li class="hotel-item">
                     <img src="#" alt="Amara resort & spa">
-                    <p>Гостиница  от 4000 Р.</p>
-                    <button type="button">Подробнее</button>
-                    <button type="button">Забронировать</button>
-                    <img src="#" alt="4 звезды">
-                    <div class="hotel-rating">
-                        <p>Рейтинг: </p>
-                        <output name="hotel-item-rating">0</output>
+                    <div class="hotel-item-description">
+                        <h3>Amara resort & spa</h3>
+                        <p>Гостиница  от 4000 Р.</p>
+                        <div class="hotel-item-button">
+                            <button type="button">Подробнее</button>
+                            <button type="button">Забронировать</button> 
+                        </div>
+                        <div class="hotel-rating-stars">
+                            <span><img src="#" alt="звезда"></span>
+                            <span><img src="#" alt="звезда"></span>
+                            <span><img src="#" alt="звезда"></span>
+                            <span><img src="#" alt="звезда"></span>
+                        </div>
+                        <div class="hotel-rating">
+                            <p>Рейтинг: </p>
+                            <output name="hotel-item-rating">0</output>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
             <div class="hotel-list">
                 <div class="hotel-item">
                     <h3>Desert quail inn</h3>
