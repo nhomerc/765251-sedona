@@ -83,32 +83,38 @@
       </section>
       
       <section class="offers">
-        <h2>Заинтересовались?</h2>
-        <p class="offers-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <img src="#" alt="Карта">
-        <input type="button" value="Поиск гостиницы в Седоне">
-        <form>
-          <div class="arrival-date">
-            <label for="arrival-date">Дата заезда</label>
-            <input type="date" name="arrival-date-input">
-          </div>
-          <div class="departure-date">
-            <label for="departure-date">Дата выезда</label>
-            <input type="date" name="departure-date-input">
-          </div>
-          <div class="adults">
-            <label for="quantity-adults">Взрослые</label>
-            <input type="button" value="-">
-            <input type="number" name="quantity-adults" min="0" max="5">
-            <input type="button" value="+">
-          </div>
-          <div class="kids">
+        <div class="picking">
+          <h2>Заинтересовались?</h2>
+          <input type="button" value="Поиск гостиницы в Седоне">
+          <p class="offers-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <form>
+            <div class="arrival-date">
+              <label for="arrival-date">Дата заезда</label>
+              <input type="date" name="arrival-date-input" id="arrival-date">
+            </div>
+            <div class="departure-date">
+              <label for="departure-date">Дата выезда</label>
+              <input type="date" name="departure-date-input" id="departure-date">
+            </div>
+            <div class="adults">
+              <label for="quantity-adults">Взрослые</label>
+              <div class="button-adults">
+                <button type="button">-</button>
+                <input type="number" name="quantity-adults" min="0" max="5" id="quantity-adults">
+                <button type="button">+</button>
+              </div>
+            </div>
+            <div class="kids">
               <label for="quantity-kids">Дети</label>
-              <input type="button" value="-">
-              <input type="number" name="quantity-kids" min="0" max="5">
-              <input type="button" value="+">
-          </div>
-        </form>          
+              <div class="button-kids">
+                <button type="button">-</button>
+                <input type="number" name="quantity-kids" min="0" max="5" id="quantity-kids"> 
+                <button type="button">+</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <img src="#" alt="Карта">          
       </section>
     </main>
 
