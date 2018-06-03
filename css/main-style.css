@@ -1,0 +1,119 @@
+.main-container {
+  border: 1px solid black;
+  width: 1200px;
+  margin: auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.site-navigation {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.site-navigation-continuation {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  border: 1px solid rebeccapurple;
+}
+
+.footer-social li a {
+  margin: 10px;
+}
+
+.container-tagline {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-tagline p:nth-child(1) {
+  font-weight: bold;
+}
+
+.feature-list-interior:nth-of-type(1) {
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feature-item-interior {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-list-interior:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feature-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+
+.adults {
+  display: flex;
+  justify-content: center;
+}
+
+.kids {
+  display: flex;
+  justify-content: center;
+}
+
+.quantity-human {
+  display: flex;
+  justify-content: space-around;
+}
+
+.picking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
