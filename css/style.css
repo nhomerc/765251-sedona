@@ -14,17 +14,19 @@
 .site-navigation {
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 0px;
   border: 1px solid blue;
+  width: 100%;
 }
 
 .site-navigation-continuation {
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 0px;
   border: 1px solid blue;
+  width: 100%;
 }
 
 .hotel-item {
@@ -73,4 +75,23 @@
 fieldset {
   width: 100%;
   display: flex;
+}
+
+.hotel-selection-option {
+  display: flex;
+  width: 100%;
+  border: 1px solid burlywood;
+  justify-content: space-between;
+}
+
+.hotel-selection-sorting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hotel-selection-direction {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
