@@ -1,31 +1,43 @@
+.main-container {
+
+  width: 1200px;
+  margin: auto;
+}
+
 .main-navigation {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
 }
 
 .site-navigation {
-  list-style: none;
-  margin: 0px;
-  padding-left: 0px;
-
   display: flex;
-  justify-content: flex-end;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0px;
+  border: 1px solid blue;
 }
 
-li a {
-  display: block;
-
+.site-navigation-continuation {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0px;
+  border: 1px solid blue;
 }
 
 .hotel-item {
   display: flex;
-  width: 100%;
+  align-items: center;
+  width: auto;
   border: 1px solid blue;
+  margin-right: 40px;
 }
 
 .hotel-item-description div {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   border: 1px solid red;
   text-transform: uppercase;
@@ -34,5 +46,31 @@ li a {
 .hotel-item-description {
   width: 100%;
   margin-left: 20px;
-  margin-right: 40px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  border: 1px solid rebeccapurple;
+}
+
+.footer-social li a {
+  margin: 10px;
+}
+
+.hotel-conditions {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
 }
