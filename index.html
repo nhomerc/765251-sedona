@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/main-style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,22 +57,31 @@
         </div>
         <ul class="feature-list">
           <li class="feature-item">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить
-              <br> в настоящем мотеле,
-              <br> всё как в кино!</p>
+            <img src="img/icon-1.png" alt="Жильё">
+            <div>
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить
+                <br> в настоящем мотеле,
+                <br> всё как в кино!</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте
-              <br> фирменный бургер,
-              <br> вы не разочаруетесь!</p>
+            <img src="img/icon-3.png" alt="Еда">
+            <div>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте
+                <br> фирменный бургер,
+                <br> вы не разочаруетесь!</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского,
-              <br> но и местного
-              <br> производства!</p>
+            <img src="img/icon-2.png" alt="Сувениры">
+            <div>
+              <h3>Сувениры</h3>
+              <p>Не только китайского,
+                <br> но и местного
+                <br> производства!</p>
+            </div>
           </li>
         </ul>
         <div class="feature-list-interior">
@@ -114,9 +123,9 @@
       <section class="offers">
         <div class="picking">
           <h2>Заинтересовались?</h2>
-          <input type="button" value="Поиск гостиницы в Седоне">
           <p class="offers-text">Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <input type="button" value="Поиск гостиницы в Седоне">
           <form>
             <div class="pop-up">
               <div class="date">
@@ -149,26 +158,34 @@
             </div>
           </form>
         </div>
-        <img src="#" alt="Карта">
+        <!-- <img src="img/map.png" alt="Карта" width="1200px" height="593px"> -->
       </section>
     </main>
 
     <footer class="main-footer">
-      <p>#Visitsedona</p>
-      <ul class="footer-social">
-        <li>
-          <a class="social-button" href="#">Twitter</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Facebook</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">YouTube</a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <p>website by</p>
-        <img src="#" alt="Лого htmlacademy">
+      <div class="main-footer-group">
+        <p>#Visitsedona</p>
+        <ul class="footer-social">
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/twitter.svg.png" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/facebook.png" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button">
+              <img src="img/youtube.svg.png" alt="youtube">
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p>website by</p>
+          <img src="img/logo-htmlacademy.svg" alt="Лого htmlacademy" width="115px" height="41px">
+        </div>
       </div>
     </footer>
 
