@@ -79,14 +79,10 @@ a{
   display: flex;
   /* align-items: center; */
   justify-content: space-around;
-
   height: 90px;
   margin: 0px;
   padding: 0px;
-
 }
-
-
 
 .hotel-item-description div {
   display: flex;
@@ -101,8 +97,6 @@ a{
   width: 100%;
   margin-left: 20px;
   height: 90px;
-
-
 }
 
 .hotel-item-description h3 {
@@ -114,9 +108,18 @@ a{
 }
 
 .hotel-item-description div p {
-
   font-family: PT Sans;
   font-size: 14px;
+}
+
+.hotel-rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  font-family: PT Sans;
+  font-size: 14px;
+  text-align: center;
+  border:  1px solid red;
 }
 
 .hotel-choose {
@@ -255,7 +258,28 @@ fieldset {
   text-align: center;
   background-color: #81b3d2;
   font-family: PT Sans;
+}
 
+.feature-item-interior h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.feature-item-interior p {
+  font-size: 14px;
+  color: white;
+}
+
+.feature-item h3 {
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.feature-item p {
+  font-family: PT Sans;
+  font-size: 14px;
 }
 
 .feature-list-interior:nth-of-type(2) {
@@ -316,6 +340,23 @@ fieldset {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.picking h3 {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.picking p {
+  font-family: PT Sans;
+  font-size: 14px;
+}
+
+.picking label {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .pop-up {
