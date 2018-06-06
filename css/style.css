@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
 .main-container {
   width: 1200px;
   margin: auto;
 }
 
 .main-navigation {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 14px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,6 +34,7 @@
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 .site-navigation-continuation {
@@ -48,28 +54,127 @@ a{
   align-items: center;
 }
 
-.hotel-item {
-  display: flex;
-  align-items: center;
-  border: 1px solid blue;
+.main-tagline {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.tagline-item {
+  font-family: PT Sans;
+  font-size: 14px;
 }
 
 .hotel-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  height: 453px;
 }
+
+
+.hotel-item {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+
+  height: 90px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
 
 .hotel-item-description div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
   text-transform: uppercase;
 }
 
 .hotel-item-description {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-left: 20px;
+  height: 90px;
+
+
+}
+
+.hotel-item-description h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.hotel-item-description div p {
+
+  font-family: PT Sans;
+  font-size: 14px;
+}
+
+.hotel-choose {
+  background: url("../img/filter-background.jpg");
+  width: 1200px;
+  height: 217px;
+}
+
+.hotel-conditions {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+}
+
+.hotel-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1200px;
+  height: 540px;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.hotel-selection-option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: 0px;
+  margin: 0px;
+  height: 86px;
+}
+
+.hotel-selection-sorting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.hotel-selection-direction {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hotel-selection-found {
+  display: flex;
+  align-items: baseline;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 .main-footer {
@@ -104,6 +209,9 @@ a{
   width: 1200px;
   justify-content: space-around;
   align-items: center;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
 
 }
 
@@ -112,43 +220,11 @@ a{
   align-items: center;
   padding: 0px;
   margin: 0;
+  font-family: PT Sans;
+  font-size: 14px;
 }
 
-.hotel-conditions {
-  display: flex;
 
-  justify-content: space-between;
-}
-
-fieldset {
-  width: 100%;
-  display: flex;
-}
-
-.hotel-selection-option {
-  display: flex;
-  width: 100%;
-  border: 1px solid burlywood;
-  justify-content: space-between;
-}
-
-.hotel-selection-sorting {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.hotel-selection-direction {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.hotel-selection-found {
-  display: flex;
-  border: 1px solid peru;
-  align-items: baseline;
-}
 
 .container-tagline {
   display: flex;
@@ -177,7 +253,9 @@ fieldset {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #81b3d2;
+  background-color: #81b3d2;
+  font-family: PT Sans;
+
 }
 
 .feature-list-interior:nth-of-type(2) {
@@ -195,11 +273,24 @@ fieldset {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  font-family: PT Sans;
+
 }
+
+
 
 .date {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  /* justify-content: center; */
+}
+
+.date input {
+  width: 346px;
+  height: 38px;
+  margin-right: 55px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .adults {
@@ -215,6 +306,8 @@ fieldset {
 .quantity-human {
   display: flex;
   justify-content: space-around;
+  border: 1px solid blue;
+  width: 568px;
 }
 
 .picking {
@@ -228,8 +321,36 @@ fieldset {
 .pop-up {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  width: 568px;
+  height: 395px;
+  border: 1px solid red;
+  /* padding-left: 55px;
+  padding-right: 55px; */
 }
+
+.button__find {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: white;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.button__pop-up {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  color: white;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+
 
 .container-intro {
   display: flex;
@@ -243,11 +364,11 @@ fieldset {
 .feature-list:nth-last-of-type(1) {
   display: flex;
   align-items: center;
-  background: #eeeeee;
   margin: 0;
   padding: 0;
   width: 1200px;
   height: 256px;
+  background-color: #eeeeee;
 }
 
 .feature-list:nth-last-of-type(2) {
@@ -257,4 +378,26 @@ fieldset {
   padding: 0;
   width: 1200px;
   height: 330px;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+fieldset {
+  height: 190px;
+}
+
+.hotel-item-button__more {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color:white;
+}
+
+.hotel-item-button__reservation {
+  width: 142px;
+  height: 27px;
+  color: white;
+  background-color: #766357;
 }

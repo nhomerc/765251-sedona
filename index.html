@@ -125,16 +125,18 @@
           <h2>Заинтересовались?</h2>
           <p class="offers-text">Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <input type="button" value="Поиск гостиницы в Седоне">
+          <button type="button" class="button__pop-up">Поиск гостиницы в Седоне</button>
           <form>
             <div class="pop-up">
               <div class="date">
-                <label for="arrival-date">Дата заезда</label>
-                <input type="date" name="arrival-date-input" id="arrival-date">
+                <label for="arrival-date">Дата заезда
+                  <input type="date" name="arrival-date-input" id="arrival-date">
+                </label>
               </div>
               <div class="date">
-                <label for="departure-date">Дата выезда</label>
-                <input type="date" name="departure-date-input" id="departure-date">
+                <label for="departure-date">Дата выезда
+                  <input type="date" name="departure-date-input" id="departure-date">
+                </label>
               </div>
               <div class="quantity-human">
                 <div class="adults">
@@ -144,6 +146,7 @@
                     <input type="number" name="quantity-adults" min="0" max="5" id="quantity-adults">
                     <button type="button">+</button>
                   </div>
+
                 </div>
                 <div class="kids">
                   <label for="quantity-kids">Дети</label>
@@ -152,9 +155,10 @@
                     <input type="number" name="quantity-kids" min="0" max="5" id="quantity-kids">
                     <button type="button">+</button>
                   </div>
+
                 </div>
               </div>
-              <button type="button">Найти</button>
+              <button type="button" class="button__find">Найти</button>
             </div>
           </form>
         </div>

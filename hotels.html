@@ -34,9 +34,9 @@
     </header>
 
     <main class="hotel">
-      <h1 class="visually-hidden">Подбор гостиницы</h1>
+      <!-- <h1 class="visually-hidden">Подбор гостиницы</h1> -->
       <section class="hotel-choose">
-        <h2 class="visually-hidden">Фильтр</h2>
+        <!-- <h2 class="visually-hidden">Фильтр</h2> -->
         <form class="hotel-conditions">
           <fieldset>
             <legend>Инфраструктура: </legend>
@@ -70,7 +70,7 @@
         </form>
       </section>
       <section class="hotel-selection">
-        <h2 class="visually-hidden">Список гостиниц</h2>
+        <!-- <h2 class="visually-hidden">Список гостиниц</h2> -->
         <div class="hotel-selection-option">
           <div class="hotel-selection-found">
             <p>Найдено: </p>
@@ -83,28 +83,28 @@
             <button type="button">По рейтингу</button>
           </div>
           <div class="hotel-selection-direction">
-            <button type="button">стрелка вверх</button>
-            <button type="button">стрелка вниз</button>
+            <button type="button"><img src="img/icon-up-dir.svg"></button>
+            <button type="button"><img src="img/icon-down-dir.svg"></button>
           </div>
         </div>
         <ul class="hotel-list">
           <li class="hotel-item">
-            <img src="img/135x90.png" alt="Amara resort & spa" width="135px" height="90px">
+            <img src="img/amara.jpg" alt="Amara resort & spa" width="135px" height="90px">
             <div class="hotel-item-description">
               <div>
                 <h3>Amara resort & spa</h3>
                 <div class="hotel-rating-stars">
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                 </div>
               </div>
@@ -113,8 +113,8 @@
               </div>
               <div>
                 <div class="hotel-item-button">
-                  <button type="button">Подробнее</button>
-                  <button type="button">Забронировать</button>
+                  <button type="button" class="hotel-item-button__more">Подробнее</button>
+                  <button type="button" class="hotel-item-button__reservation">Забронировать</button>
                 </div>
                 <div class="hotel-rating">
                   <p>Рейтинг: </p>
@@ -124,19 +124,19 @@
             </div>
           </li>
           <li class="hotel-item">
-            <img src="img/135x90.png" alt="Desert quail inn" width="135px" height="90px">
+            <img src="img/desert.jpg" alt="Desert quail inn" width="135px" height="90px">
             <div class="hotel-item-description">
               <div>
                 <h3>Desert quail inn</h3>
                 <div class="hotel-rating-stars">
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                 </div>
               </div>
@@ -156,16 +156,16 @@
             </div>
           </li>
           <li class="hotel-item">
-            <img src="img/135x90.png" alt="Villas at poco diablo" width="135px" height="90px">
+            <img src="img/villas.jpg" alt="Villas at poco diablo" width="135px" height="90px">
             <div class="hotel-item-description">
               <div>
                 <h3>Villas at poco diablo</h3>
                 <div class="hotel-rating-stars">
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                   <span>
-                    <img src="#" alt="звезда">
+                    <img src="img/star.png" alt="звезда">
                   </span>
                 </div>
               </div>
@@ -188,22 +188,30 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <p>#Visitsedona</p>
-      <ul class="footer-social">
-        <li>
-          <a class="social-button" href="#">Twitter</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Facebook</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">YouTube</a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <p>website by</p>
-        <img src="#" alt="Лого htmlacademy">
+    <footer class="hotels-footer">
+      <div class="main-footer-group">
+        <p>#Visitsedona</p>
+        <ul class="footer-social">
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/twitter.svg.png" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/facebook.png" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button">
+              <img src="img/youtube.svg.png" alt="youtube">
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p>website by</p>
+          <img src="img/logo-htmlacademy.svg" alt="Лого htmlacademy" width="115px" height="41px">
+        </div>
       </div>
     </footer>
   </div>
