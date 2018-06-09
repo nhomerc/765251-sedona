@@ -13,6 +13,8 @@
   justify-content: space-around;
   align-items: center;
   height: 56px;
+  text-transform: uppercase;
+  line-height: 26px;
 }
 
 .site-navigation {
@@ -58,11 +60,13 @@ a{
   font-family: PT Sans;
   font-weight: bold;
   font-size: 21px;
+  line-height: 26px;
 }
 
 .tagline-item {
   font-family: PT Sans;
   font-size: 14px;
+  line-height: 26px;
 }
 
 .hotel-list {
@@ -105,11 +109,13 @@ a{
   font-family: PT Sans;
   font-weight: bold;
   font-size: 21px;
+  line-height: 21px;
 }
 
 .hotel-item-description div p {
   font-family: PT Sans;
   font-size: 14px;
+  line-height: 21px;
 }
 
 .hotel-rating {
@@ -118,8 +124,16 @@ a{
   background-color: #f2f2f2;
   font-family: PT Sans;
   font-size: 14px;
-  text-align: center;
   border:  1px solid red;
+}
+
+.hotel-rating p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid fuchsia;
 }
 
 .hotel-choose {
@@ -305,8 +319,9 @@ fieldset {
 
 .date {
   display: flex;
-  justify-content: flex-start;
-  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid khaki;
 }
 
 .date input {
@@ -319,19 +334,24 @@ fieldset {
 
 .adults {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .kids {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .quantity-human {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
   border: 1px solid blue;
-  width: 568px;
+
 }
 
 .picking {
@@ -421,8 +441,19 @@ fieldset {
   height: 330px;
 }
 
-.visually-hidden {
-  visibility: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 fieldset {
@@ -441,4 +472,30 @@ fieldset {
   height: 27px;
   color: white;
   background-color: #766357;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid blueviolet;
+}
+
+.button button {
+  height: 38px;
+  width: 38px;
+  margin: 0;
+  padding: 0;
+}
+
+.button input {
+  height: 32px;
+  width: 38px;
+}
+
+.pop-up__inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 458px;
+  height: 285px;
 }

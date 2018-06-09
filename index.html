@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -128,41 +129,42 @@
           <button type="button" class="button__pop-up">Поиск гостиницы в Седоне</button>
           <form>
             <div class="pop-up">
-              <div class="date">
-                <label for="arrival-date">Дата заезда
+              <div class="pop-up__inside">
+                <div class="date">
+                  <label for="arrival-date">Дата заезда</label>
                   <input type="date" name="arrival-date-input" id="arrival-date">
-                </label>
-              </div>
-              <div class="date">
-                <label for="departure-date">Дата выезда
+
+                </div>
+                <div class="date">
+                  <label for="departure-date">Дата выезда</label>
                   <input type="date" name="departure-date-input" id="departure-date">
-                </label>
-              </div>
-              <div class="quantity-human">
-                <div class="adults">
-                  <label for="quantity-adults">Взрослые</label>
-                  <div class="button">
-                    <button type="button">-</button>
-                    <input type="number" name="quantity-adults" min="0" max="5" id="quantity-adults">
-                    <button type="button">+</button>
-                  </div>
 
                 </div>
-                <div class="kids">
-                  <label for="quantity-kids">Дети</label>
-                  <div class="button">
-                    <button type="button">-</button>
-                    <input type="number" name="quantity-kids" min="0" max="5" id="quantity-kids">
-                    <button type="button">+</button>
-                  </div>
+                <div class="quantity-human">
+                  <div class="adults">
+                    <label for="quantity-adults">Взрослые</label>
+                    <div class="button">
 
+                      <button type="button">-</button>
+                      <input type="number" name="quantity-adults" min="0" max="5" id="quantity-adults">
+                      <button type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="kids">
+                    <label for="quantity-kids">Дети</label>
+                    <div class="button">
+
+                      <button type="button">-</button>
+                      <input type="number" name="quantity-kids" min="0" max="5" id="quantity-kids">
+                      <button type="button">+</button>
+                    </div>
+                  </div>
                 </div>
+                <button type="button" class="button__find">Найти</button>
               </div>
-              <button type="button" class="button__find">Найти</button>
             </div>
           </form>
         </div>
-        <!-- <img src="img/map.png" alt="Карта" width="1200px" height="593px"> -->
       </section>
     </main>
 
