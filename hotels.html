@@ -65,6 +65,14 @@
           <fieldset>
             <legend>Стоимость в сутки (р):</legend>
             <div class="value">
+              <div class="hotel-conditions__cost">
+                <div>
+                  <input type="text" value="ОТ">
+                  <input type="text" value="ДО">
+                </div>
+                <input type="range" min="0">
+              </div>
+              <button type="button">ПОКАЗАТЬ</button>
             </div>
           </fieldset>
         </form>
@@ -78,13 +86,25 @@
           </div>
           <div class="hotel-selection-sorting">
             <p>Сортировка: </p>
-            <button type="button">По цене</button>
-            <button type="button">По типу</button>
-            <button type="button">По рейтингу</button>
+            <ul class="hotel-selection-sorting__order">
+              <li>
+                <button type="button">По цене</button>
+              </li>
+              <li>
+                <button type="button">По типу</button>
+              </li>
+              <li>
+                <button type="button">По рейтингу</button>
+              </li>
+            </ul>
           </div>
           <div class="hotel-selection-direction">
-            <button type="button"><img src="img/icon-up-dir.svg"></button>
-            <button type="button"><img src="img/icon-down-dir.svg"></button>
+            <button type="button">
+              <img src="img/icon-up-dir.svg">
+            </button>
+            <button type="button">
+              <img src="img/icon-down-dir.svg">
+            </button>
           </div>
         </div>
         <ul class="hotel-list">
@@ -149,7 +169,9 @@
                   <button type="button">Забронировать</button>
                 </div>
                 <div class="hotel-rating">
-                  <p>Рейтинг: <span>8,9</span></p>
+                  <p>Рейтинг:
+                    <span>8,9</span>
+                  </p>
 
                 </div>
               </div>
