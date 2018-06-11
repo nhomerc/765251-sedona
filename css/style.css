@@ -40,7 +40,8 @@ img {
   .main-header-logo {
     position: absolute;
     left: 50%;
-    margin-left: -69px;
+    /* margin-left: -69px; */
+    transform: translateX(-50%);
   }
 
   .site-navigation {
@@ -53,10 +54,15 @@ img {
 
     .site-navigation li {
       width: 239px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      text-align: center;
+      align-self: stretch;
     }
+
+      .site-navigation a {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center;
+      }
 
   .site-navigation-continuation {
     display: flex;
@@ -67,10 +73,16 @@ img {
 
     .site-navigation-continuation li {
       width: 239px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      text-align: center;
+      align-self: stretch;
     }
+
+      .site-navigation-continuation a {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center;
+      }
+
 
 /* конец */
 
@@ -475,16 +487,37 @@ fieldset {
   border: none;
 }
 
+/* Фото Седоны и девиз */
+
+.container__photo {
+  height: 508px;
+  background-image: url("../img/background photo.jpg");
+  background-size: cover;
+  background-position:0 -56px;
+}
+
+  .container__photo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 57px;
+    background:  url("../img/background-photo_mask.png") no-repeat center bottom;
+    background-size: 100% auto;
+    z-index: 1;
+  }
+
 .container-intro {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../img/test1.jpg");
+  /* background-image: url("../img/test1.jpg");
   background-size: cover;
   background-position:0 -56px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 1200px;
-  height: 724px;
+  /* height: 724px; */
 }
 
 .feature-list:last-of-type {
