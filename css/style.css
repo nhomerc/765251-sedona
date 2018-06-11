@@ -8,6 +8,7 @@
 
 body {
   font-family: PT Sans;
+  text-transform: uppercase;
 }
 
 a {
@@ -21,9 +22,9 @@ h1, h2, h3, p, button, input, ul {
   padding: 0;
 }
 
-img {
+/* img {
   object-fit: fill;
-}
+} */
 
 /* Навигация сайта */
 
@@ -40,8 +41,8 @@ img {
   .main-header-logo {
     position: absolute;
     left: 50%;
-    /* margin-left: -69px; */
     transform: translateX(-50%);
+    z-index: 1;
   }
 
   .site-navigation {
@@ -100,6 +101,156 @@ img {
   }
 
 /* конец */
+
+/* Основные достопримичательности */
+
+.feature-list-interior:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  min-height: 256px;
+}
+
+  .feature-list-interior__photo {
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .feature-item-interior {
+    display: flex;
+    width: 400px;
+    background-color: #81b3d2;
+    padding-bottom: 40px;
+    padding-top: 46px;
+    min-height: 166px;
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: center;
+    line-height: 21px;
+
+  }
+
+    .feature-item-interior h3 {
+      font-size: 21px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 25px;
+    }
+
+    .feature-item-interior p {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+.feature-list-interior:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 256px;
+}
+
+.feature-list {
+  display: flex;
+  list-style: none;
+  min-height: 256px;
+}
+
+.feature-list:last-of-type {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-height: 256px;
+  background-color: #eeeeee;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.feature-list:first-of-type {
+  display: flex;
+  width: 1200px;
+  min-height: 330px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+  .feature-item {
+    align-self: stretch;
+    width: 400px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+    .feature-item h3 {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .feature-item p {
+      padding-top: 25px;
+      font-size: 14px;
+    }
+
+    .feature-item__details {
+      width: 400px;
+      margin-top: 160px;
+    }
+
+    .feature-item__details:nth-of-type(2)::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 74px;
+      height: 70px;
+      top: 1095px;
+      background: url("../img/icon-3.svg") no-repeat top center;
+      background-size: 74px 70px;
+    }
+
+    .feature-item__details:nth-of-type(1)::before {
+      content: "";
+      position: absolute;
+      left: 515px;
+      width: 75px;
+      height: 72px;
+      top: 1095px;
+      background: url("../img/icon-1.svg") no-repeat top center;
+      background-size: 75px 72px;
+    }
+
+    .feature-item__details:nth-of-type(3)::before {
+      content: "";
+      position: absolute;
+      right: 520px;
+      width: 64px;
+      height: 76px;
+      top: 1090px;
+      background: url("../img/icon-2.svg") no-repeat top center;
+      background-size: 64px 76px;
+    }
+
+
+    /* .feature-item__details img{
+      align-self: center;
+    } */
+
+    .feature-item__details div{
+      text-align: center;
+    }
+
+      .feature-item__details div h3{
+        font-size: 21px;
+        margin-bottom: 22px;
+      }
+
+      .feature-item__details p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+/* конец     */
+
+
+
 
 /* Список отелей */
 
@@ -286,105 +437,8 @@ fieldset {
   font-size: 14px;
 }
 
-.container-tagline {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-end; */
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.container-tagline p:first-of-type {
-  font-size: 21px;
-  padding-top: 55px;
-  font-weight: bold;
-}
-
-.container-tagline p:last-of-type {
-  font-size: 14px;
-  padding-top: 30px;
-  padding-bottom: 47px;
-}
 
 
-.feature-list-interior:first-of-type {
-  display: flex;
-  justify-content: space-between;
-}
-
-.feature-item-interior {
-  display: flex;
-  width: 400px;
-  background-color: #81b3d2;
-  padding-bottom: 40px;
-  padding-top: 46px;
-  min-height: 166px;
-  text-transform: uppercase;
-  flex-direction: column;
-  text-align: center;
-  line-height: 21px;
-}
-
-.feature-item-interior h3 {
-  font-size: 21px;
-  font-weight: bold;
-  color: white;
-}
-
-.feature-item-interior p {
-  font-size: 14px;
-  color: white;
-  padding-top: 25px;
-}
-
-.feature-item {
-  align-self: stretch;
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-
-.feature-item h3 {
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.feature-item p {
-  padding-top: 25px;
-  font-size: 14px;
-}
-
-.feature-item__details {
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-}
-
-.feature-item__details img{
-  align-self: center;
-}
-
-.feature-item__details div{
-  text-align: center;
-  margin-top: 32px;
-}
-
-.feature-item__details div h3{
-  padding-bottom: 20px;
-}
-
-.feature-list-interior:last-of-type {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.feature-list {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  text-align: center;
-  text-transform: uppercase;
-  min-height: 256px;
-}
 
 .date {
   display: flex;
@@ -487,10 +541,11 @@ fieldset {
   border: none;
 }
 
-/* Фото Седоны и девиз */
+/* Фото Седоны */
 
 .container__photo {
   height: 508px;
+  position: relative;
   background-image: url("../img/background photo.jpg");
   background-size: cover;
   background-position:0 -56px;
@@ -500,7 +555,7 @@ fieldset {
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
+    bottom: 0;
     width: 100%;
     height: 57px;
     background:  url("../img/background-photo_mask.png") no-repeat center bottom;
@@ -508,36 +563,46 @@ fieldset {
     z-index: 1;
   }
 
+  .container__photo img {
+    margin-top: 76px;
+    margin-left: 371px;
+  }
+
+/* конец */
+
+/* Девиз */
+
 .container-intro {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* background-image: url("../img/test1.jpg");
-  background-size: cover;
-  background-position:0 -56px;
-  background-repeat: no-repeat; */
   width: 1200px;
-  /* height: 724px; */
 }
 
-.feature-list:last-of-type {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  min-height: 256px;
-  background-color: #eeeeee;
-  margin: 0;
-  padding: 0;
-}
+  .container-tagline {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.feature-list:first-of-type {
-  display: flex;
-  /* align-items: center; */
-  width: 1200px;
-  min-height: 330px;
-  margin: 0;
-  padding: 0;
-}
+    .container-tagline p:first-of-type {
+      font-size: 21px;
+      padding-top: 60px;
+      line-height: 26px;
+      font-weight: bold;
+    }
+
+    .container-tagline p:last-of-type {
+      font-size: 14px;
+      padding-top: 27px;
+      line-height: 26px;
+      padding-bottom: 50px;
+    }
+
+/* конец */
+
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
