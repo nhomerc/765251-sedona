@@ -3,7 +3,7 @@
 .main-container {
   width: 1200px;
   margin: auto;
-  box-shadow: 0px 0px 40px 40px rgba(242, 242, 242, 0.95);
+  box-shadow: 0 -5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -25,6 +25,8 @@ img {
   object-fit: fill;
 }
 
+/* Навигация сайта */
+
 .main-navigation {
   font-weight: bold;
   font-size: 14px;
@@ -32,43 +34,47 @@ img {
   align-items: stretch;
   justify-content: space-between;
   text-transform: uppercase;
-  /* line-height: 26px; */
   min-height: 56px;
 }
 
-.site-navigation {
-  display: flex;
-  list-style: none;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 478px;
-}
+  .main-header-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -69px;
+  }
 
-.site-navigation li {
-  width: 239px;
-  padding-bottom: 22px;
-  padding-top: 22px;
-  text-align: center;
-  align-items: stretch;
+  .site-navigation {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 478px;
+  }
 
-}
+    .site-navigation li {
+      width: 239px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+    }
 
-.site-navigation-continuation {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  .site-navigation-continuation {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 
-}
+    .site-navigation-continuation li {
+      width: 239px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+    }
 
-.site-navigation-continuation li {
-  width: 239px;
-  padding-bottom: 22px;
-  padding-top: 22px;
-  text-align: center;
-  align-items: stretch;
+/* конец */
 
-}
+/* Девиз на главной странице */
 
 .main-tagline {
   font-weight: bold;
@@ -76,66 +82,96 @@ img {
   line-height: 26px;
 }
 
-.tagline-item {
-  font-size: 14px;
-  line-height: 26px;
-}
+  .tagline-item {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+/* конец */
+
+/* Список отелей */
 
 .hotel-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 453px;
-  width: 1055px;
-}
-
-
-.hotel-item {
-  display: flex;
-  justify-content: space-around;
-  height: 90px;
-  margin: 0px;
-  padding: 0px;
+  justify-content: flex-start;
+  align-self: center;
+  min-height: 453px;
+  width: 1200px;
 
 }
 
-.hotel-item-description div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
+  /* Описание отеля */
 
-.hotel-item-description {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 90px;
-}
+  .hotel-item {
+    display: flex;
+    justify-content: space-around;
+    min-height: 151px;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 72px;
+    padding-right: 73px;
+    border-top: 1px solid #e5e5e5;
+  }
 
-.hotel-item-description h3 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-}
+  .hotel-item:nth-of-type(3) {
+    border-bottom: 1px solid #e5e5e5;
+  }
 
-.hotel-item-description div p {
-  font-size: 14px;
-  line-height: 21px;
-}
+    .hotel-item-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 90px;
+      margin-left: 30px;
+      align-self: center;
+    }
 
-.hotel-rating {
-  width: 110px;
-  height: 27px;
-  background-color: #f2f2f2;
-  font-size: 14px;
-}
+      .hotel-item-description div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+      }
 
-.hotel-rating p {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+        .hotel-item-description h3 {
+          font-weight: bold;
+          font-size: 21px;
+          line-height: 21px;
+        }
+
+        .hotel-rating-stars span{
+          margin-right: 6px;
+        }
+
+        .hotel-rating-stars span:nth-last-of-type(1){
+          margin-right: 0px;
+        }
+
+      .hotel-item-description div p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .hotel-rating {
+        width: 110px;
+        height: 27px;
+        background-color: #f2f2f2;
+        font-size: 14px;
+      }
+
+        .hotel-rating p {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+
+      .hotel-item-button__booking {
+        margin-left: 6px;
+      }
+/* конец */
 
 .hotel-choose {
   background: url("../img/filter-background.jpg");
@@ -153,49 +189,55 @@ fieldset {
   display: flex;
 }
 
+/* Сортировка и показ отелей  */
+
 .hotel-selection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 1200px;
   height: 540px;
-  padding: 0px;
-  margin: 0px;
 }
+
+/* Показ кол-ва отелей и сортировка */
 
 .hotel-selection-option {
   display: flex;
   width: 1055px;
-  justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
+  align-self: center;
+  justify-content: flex-start;
   height: 86px;
 }
 
-.hotel-selection-sorting {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .hotel-selection-found {
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    width: 164px;
+  }
 
-.hotel-selection-sorting__order {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
+  .hotel-selection-sorting {
+    display: flex;
+    width: 354px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.hotel-selection-direction {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+    .hotel-selection-sorting__order {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
 
-.hotel-selection-found {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  font-size: 21px;
-}
+  .hotel-selection-direction {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+/* конец   */
+
 
 .main-footer {
   display: flex;
@@ -203,7 +245,6 @@ fieldset {
   align-items: flex-end;
   justify-content: space-around;
   width: 1200px;
-
 }
 
 .footer-social {
@@ -227,6 +268,7 @@ fieldset {
 .footer-copyright {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   padding: 0px;
   margin: 0;
   font-size: 14px;
@@ -235,15 +277,23 @@ fieldset {
 .container-tagline {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   text-align: center;
   text-transform: uppercase;
 }
 
-.container-tagline p:nth-child(1) {
+.container-tagline p:first-of-type {
+  font-size: 21px;
+  padding-top: 55px;
   font-weight: bold;
-
 }
+
+.container-tagline p:last-of-type {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 47px;
+}
+
 
 .feature-list-interior:first-of-type {
   display: flex;
@@ -255,14 +305,12 @@ fieldset {
   width: 400px;
   background-color: #81b3d2;
   padding-bottom: 40px;
-  padding-top: 50px;
+  padding-top: 46px;
   min-height: 166px;
   text-transform: uppercase;
   flex-direction: column;
   text-align: center;
   line-height: 21px;
-  align-self: center;
-  justify-content: center;
 }
 
 .feature-item-interior h3 {
@@ -274,6 +322,13 @@ fieldset {
 .feature-item-interior p {
   font-size: 14px;
   color: white;
+  padding-top: 25px;
+}
+
+.feature-item {
+  align-self: stretch;
+  padding-top: 45px;
+  padding-bottom: 40px;
 }
 
 .feature-item h3 {
@@ -282,7 +337,27 @@ fieldset {
 }
 
 .feature-item p {
+  padding-top: 25px;
   font-size: 14px;
+}
+
+.feature-item__details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.feature-item__details img{
+  align-self: center;
+}
+
+.feature-item__details div{
+  text-align: center;
+  margin-top: 32px;
+}
+
+.feature-item__details div h3{
+  padding-bottom: 20px;
 }
 
 .feature-list-interior:last-of-type {
@@ -296,6 +371,7 @@ fieldset {
   justify-content: space-around;
   text-align: center;
   text-transform: uppercase;
+  min-height: 256px;
 }
 
 .date {
@@ -328,21 +404,40 @@ fieldset {
   align-items: center;
 }
 
+/* Блок "Заинтересовались" с кнопкой */
+
 .picking {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.picking h3 {
-  font-weight: bold;
-  font-size: 30px;
-}
+  .picking div {
+    margin-top: 52px;
+    text-align: center;
+  }
 
-.picking p {
-  font-size: 14px;
+    .picking div h2 {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .picking div p {
+      padding-top: 30px;
+      padding-bottom: 55px;
+      font-size: 14px;
+    }
+
+  .picking button {
+    align-self: center;
+  }
+
+/* конец */
+
+.map {
+  width: 1200px;
+  height: 474px;
+  background: url(../img/map.png);
 }
 
 .picking label {
@@ -404,7 +499,7 @@ fieldset {
 
 .feature-list:first-of-type {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 1200px;
   min-height: 330px;
   margin: 0;
@@ -497,8 +592,4 @@ fieldset {
   border: 1px solid tomato;
 }
 
-.map {
-  width: 1200px;
-  height: 474px;
-  background: url(../img/map.png);
-}
+

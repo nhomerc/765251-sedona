@@ -20,9 +20,11 @@
             <a href="#">Фото и видео</a>
           </li>
         </ul>
+
         <a class="main-header-logo">
           <img src="img/logo.png" alt="Логотип Седона" width="138px" height="70px">
         </a>
+
         <ul class="site-navigation-continuation">
           <li>
             <a href="#">Карта штата</a>
@@ -38,7 +40,7 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="container-intro">
         <div class="container-tagline">
-          <p class="main-tagline">Седона - небольшой городок в Аризоне,
+          <p class="main-tagline">Седона &mdash; небольшой городок в Аризоне,
             <br> заслуживающий большего!</p>
           <p class="tagline-item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -49,31 +51,31 @@
           <div class="feature-item-interior">
             <h3>Настоящий
               <br>городок</h3>
-            <p>- №1 -</p>
+            <p>&mdash; №1 &mdash;</p>
             <p>Седона - не аттракцион для туристов,
               <br>там течет своя жизнь</p>
           </div>
           <img src="img/foto1.jpg" alt="Настоящий городок" width="800px">
         </div>
         <ul class="feature-list">
-          <li class="feature-item">
-            <img src="img/icon-1.png" alt="Жильё">
+          <li class="feature-item__details">
+            <img src="img/icon-1.png" alt="Жильё" height="72px" width="75px">
             <div>
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем
                 <br> мотеле, всё как в кино!</p>
             </div>
           </li>
-          <li class="feature-item">
-            <img src="img/icon-3.png" alt="Еда">
+          <li class="feature-item__details">
+            <img src="img/icon-3.png" alt="Еда" height="72px" width="75px">
             <div>
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер,
                 <br> вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="feature-item">
-            <img src="img/icon-2.png" alt="Сувениры">
+          <li class="feature-item__details">
+            <img src="img/icon-2.png" alt="Сувениры" height="72px" width="75px">
             <div>
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного
@@ -87,7 +89,7 @@
           <div class="feature-item-interior">
             <h3>Там есть
               <br> мост Дьявола</h3>
-            <p>- №2 -</p>
+            <p>&mdash; №2 &mdash;</p>
             <p>Да, по нему можно пройти! если конечно
               <br> вы осмелитесь</p>
           </div>
@@ -96,21 +98,21 @@
           <li class="feature-item">
             <h3>Небольшая
               <br> площадь</h3>
-            <p>- №3 -</p>
+            <p>&mdash; №3 &mdash;</p>
             <p>Все достопримечательности
               <br> находятся очень близко</p>
           </li>
           <li class="feature-item">
             <h3>Красивая
               <br> дорога</h3>
-            <p>- №4 -</p>
-            <p>Ехать из Лас-Вегаса совсем
+            <p>&mdash; №4 &mdash;</p>
+            <p>Ехать в седону из Лас-Вегаса совсем
               <br> не скучно!</p>
           </li>
           <li class="feature-item">
             <h3>Мало
               <br> туристов</h3>
-            <p>- №5 -</p>
+            <p>&mdash; №5 &mdash;</p>
             <p>Большинство едет в Гранд Каньон
               <br> и толпится там</p>
           </li>
@@ -119,51 +121,54 @@
 
       <section class="offers">
         <div class="picking">
-          <h2>Заинтересовались?</h2>
-          <p class="offers-text">Укажите предполагаемые даты поездки,
-            <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button type="button" class="button__pop-up">Поиск гостиницы в Седоне</button>
-          <form>
-            <div class="pop-up">
-              <div class="pop-up__inside">
-                <div class="date">
-                  <label for="arrival-date">Дата заезда</label>
-                  <input type="date" name="arrival-date-input" id="arrival-date">
-
-                </div>
-                <div class="date">
-                  <label for="departure-date">Дата выезда</label>
-                  <input type="date" name="departure-date-input" id="departure-date">
-
-                </div>
-                <div class="quantity-human">
-                  <div class="adults">
-                    <label for="quantity-adults">Взрослые</label>
-                    <div class="button">
-
-                      <button type="button">-</button>
-                      <input type="text" name="quantity-adults" min="0" max="5" id="quantity-adults">
-                      <button type="button">+</button>
-                    </div>
-                  </div>
-                  <div class="kids">
-                    <label for="quantity-kids">Дети</label>
-                    <div class="button">
-
-                      <button type="button">-</button>
-                      <input type="text" name="quantity-kids" min="0" max="5" id="quantity-kids">
-                      <button type="button">+</button>
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="button__find">Найти</button>
-              </div>
-            </div>
-          </form>
-          <div class="map">
-
+          <div>
+            <h2>Заинтересовались?</h2>
+            <p class="offers-text">Укажите предполагаемые даты поездки,
+              <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
+          <button type="button" class="button__pop-up">Поиск гостиницы в Седоне</button>
         </div>
+        <form>
+          <div class="pop-up">
+            <div class="pop-up__inside">
+              <div class="date">
+                <label for="arrival-date">Дата заезда</label>
+                <input type="date" name="arrival-date-input" id="arrival-date">
+
+              </div>
+              <div class="date">
+                <label for="departure-date">Дата выезда</label>
+                <input type="date" name="departure-date-input" id="departure-date">
+
+              </div>
+              <div class="quantity-human">
+                <div class="adults">
+                  <label for="quantity-adults">Взрослые</label>
+                  <div class="button">
+
+                    <button type="button">-</button>
+                    <input type="text" name="quantity-adults" min="0" max="5" id="quantity-adults">
+                    <button type="button">+</button>
+                  </div>
+                </div>
+                <div class="kids">
+                  <label for="quantity-kids">Дети</label>
+                  <div class="button">
+
+                    <button type="button">-</button>
+                    <input type="text" name="quantity-kids" min="0" max="5" id="quantity-kids">
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button__find">Найти</button>
+            </div>
+          </div>
+        </form>
+        <div class="map">
+
+        </div>
+
       </section>
     </main>
 
