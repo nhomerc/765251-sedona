@@ -100,7 +100,6 @@ h1, h2, h3, p, button, input, ul {
     flex-direction: column;
     text-align: center;
     line-height: 21px;
-    
   }
 
     .feature-item-interior h3 {
@@ -117,8 +116,9 @@ h1, h2, h3, p, button, input, ul {
       
     }
 
-    .feature-item-interior p:nth-last-of-type(1) {
+    .feature-item-interior p:nth-last-child(1) {
       margin-bottom: 0px;
+      
     }
 
 
@@ -143,13 +143,13 @@ h1, h2, h3, p, button, input, ul {
     background-color: #eeeeee;
     /* padding-bottom: 20px; */
     padding-top: 45px;
+    padding-bottom: 40px;
     box-sizing: border-box;
   }
 
     .feature-item {
       align-self: stretch;
       width: 400px;
-      padding-bottom: 40px;
       text-align: center;
     }
 
@@ -303,9 +303,28 @@ h1, h2, h3, p, button, input, ul {
           width: 100%;
         }
 
-      .hotel-item-button__booking {
-        margin-left: 6px;
-      }
+        .hotel-item-button__more {
+          width: 110px;
+          height: 27px;
+          background-color: #81b3d2;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          border: none;
+        }
+        
+        .hotel-item-button__booking {
+          width: 142px;
+          height: 27px;
+          background-color: #766357;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          margin-left: 6px;
+          border: none;
+        }
 /* конец */
 
 .hotel-choose {
@@ -414,13 +433,17 @@ fieldset {
           background-color: #669ec0;
         }
 
+        .footer-social__button:active svg {
+          opacity: 0.3;
+        }
+
         .footer-social__button:active {
           background-color: #5496bd;
           color: #88b6d1;
           fill: #88b6d1;
         }
 
-    .footer-social li:nth-last-of-type(1) {
+    .footer-social li:nth-last-child() {
       margin-right: 0px;
     }  
 
@@ -436,7 +459,14 @@ fieldset {
       justify-content: center;
       width: 115px;
       height: 41px;
-      
+    }
+
+    .footer-copyright__academy:hover svg {
+      fill: #81b3d2;
+    }
+
+    .footer-copyright__academy:active svg {
+      fill: #bdbbbc;
     }
 /* конец */
 
@@ -530,6 +560,7 @@ fieldset {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
     
       .date input {
@@ -537,17 +568,30 @@ fieldset {
         height: 38px;
         background-color: #f2f2f2;
         border: none;
+        
       }
 
-        .data input:focus {
-          background-color: black;
-        }
+      .date svg {
+        content: "";
+        position: absolute;
+        left: 427px;
+        fill: #cccccc;
+      }
 
-      .date input::after {
-        content: url("../img/calendar.svg");
-        display: block;
-        margin-right: 10px;
-        
+      .date:hover svg {
+        fill: #000000;
+      }
+
+      .date:active svg {
+        fill: #81b3d2;
+      }
+
+      .arrival-date__input:hover {
+        background-color: #ebebeb;
+      }
+
+      .arrival-date__input:focus {
+        background-color: #ffffff;
       }
 
     .quantity-human {
@@ -574,13 +618,42 @@ fieldset {
             justify-content: center;
             margin-left: 41px;
         }
-
+         
           .button button {
+            position: relative;
             height: 38px;
             width: 38px;
             background-color: #f2f2f2;
             border: none;
           }
+
+            .button__minus svg {
+              content: "";
+              top: 17px;
+              left: 13px;
+              fill: #a9a9a9;
+              position: absolute;
+            }
+
+            .button__plus svg {
+              content: "";
+              top: 13px;
+              left: 13px;
+              fill: #a9a9a9;
+              position: absolute;
+            }
+
+            .button__minus:hover svg,
+            .button__plus:hover svg {
+              fill: #000000;
+            }
+
+            .button__minus:active svg,
+            .button__plus:active svg {
+              fill: #81b3d2;
+            }
+
+
         
           .button input {
             height: 38px;
@@ -694,19 +767,7 @@ fieldset {
   height: 190px;
 }
 
-.hotel-item-button__more {
-  width: 110px;
-  height: 27px;
-  background: url("../img/button_add.png");
-  border: none;
-}
 
-.hotel-item-button__booking {
-  width: 142px;
-  height: 27px;
-  background: url("../img/button_booking.png");
-  border: none;
-}
 
 
 
