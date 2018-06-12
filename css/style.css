@@ -368,27 +368,49 @@ fieldset {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 21px;
-    width: 164px;
+    width: 163px;
   }
 
   .hotel-selection-sorting {
     display: flex;
-    width: 354px;
-    justify-content: space-between;
+    width: 856px;
+    justify-content: flex-start;
     align-items: center;
+    font-size: 12px;
   }
+
+    .hotel-selection-sorting p {
+      width: 134px;
+    }
 
     .hotel-selection-sorting__order {
       list-style: none;
       display: flex;
-      align-items: center;
+      justify-content: flex-start;
+      align-self: center;
+      width: 100%;
     }
+
+      .hotel-selection-sorting__order li {
+        margin-right: 30px;
+      }
+
+      .hotel-selection-sorting__order li:nth-last-child(1) {
+        margin-right: 0px;
+      }
 
   .hotel-selection-direction {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    width: 34px;
   }
+
+    .hotel-selection-direction__order{
+      display: flex;
+      list-style: none;
+      width: 100%;
+      justify-content: space-between;
+    }
 
 /* конец   */
 
