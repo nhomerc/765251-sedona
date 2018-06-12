@@ -31,7 +31,6 @@ h1, h2, h3, p, button, input, ul {
   align-items: stretch;
   justify-content: space-between;
   text-transform: uppercase;
-  min-height: 56px;
 }
 
   .main-header-logo {
@@ -44,7 +43,6 @@ h1, h2, h3, p, button, input, ul {
   .site-navigation {
     display: flex;
     list-style: none;
-    justify-content: flex-start;
     flex-wrap: wrap;
     width: 478px;
   }
@@ -60,26 +58,6 @@ h1, h2, h3, p, button, input, ul {
         padding-bottom: 20px;
         justify-content: center;
       }
-
-  .site-navigation-continuation {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-  }
-
-    .site-navigation-continuation li {
-      width: 239px;
-      align-self: stretch;
-    }
-
-      .site-navigation-continuation a {
-        display: flex;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        justify-content: center;
-      }
-
 
 /* конец */
 
@@ -102,14 +80,15 @@ h1, h2, h3, p, button, input, ul {
 
 .feature-list-interior:first-of-type {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-height: 256px;
 }
 
-  .feature-list-interior__photo {
-    height: 100px;
+  .feature-item-interior__photo img{
+    height: 100%;
     object-fit: cover;
   }
+
 
   .feature-item-interior {
     display: flex;
@@ -117,11 +96,11 @@ h1, h2, h3, p, button, input, ul {
     background-color: #81b3d2;
     padding-bottom: 40px;
     padding-top: 46px;
-    min-height: 166px;
     text-transform: uppercase;
     flex-direction: column;
     text-align: center;
     line-height: 21px;
+    
   }
 
     .feature-item-interior h3 {
@@ -135,7 +114,13 @@ h1, h2, h3, p, button, input, ul {
       font-size: 14px;
       color: white;
       margin-bottom: 20px;
+      
     }
+
+    .feature-item-interior p:nth-last-of-type(1) {
+      margin-bottom: 0px;
+    }
+
 
 .feature-list-interior:last-of-type {
   display: flex;
@@ -146,6 +131,7 @@ h1, h2, h3, p, button, input, ul {
 .feature-list {
   display: flex;
   list-style: none;
+  text-align: center;
   min-height: 256px;
 }
 
@@ -155,7 +141,7 @@ h1, h2, h3, p, button, input, ul {
     width: 1200px;
     min-height: 256px;
     background-color: #eeeeee;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     padding-top: 45px;
     box-sizing: border-box;
   }
@@ -181,19 +167,17 @@ h1, h2, h3, p, button, input, ul {
     display: flex;
     width: 1200px;
     min-height: 330px;
-    padding-bottom: 20px;
+    
     box-sizing: border-box;
   }
 
     .feature-item__details {
       width: 400px;
+      padding-bottom: 20px;
+      line-height: 21px;
     }
 
-    .feature-item__details div{
-      text-align: center;
-    }
-
-      .feature-item__details div h3{
+      .feature-item__details h3{
         font-size: 21px;
         margin-bottom: 22px;
       }
@@ -409,25 +393,41 @@ fieldset {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: 150px;
-    height: 48px;
     
   }
 
-    .footer-social__button {
-      background-color: #81b3d2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 46px;
-      height: 48px;
+    .footer-social li {
+      margin-right: 6px;
     }
+  
+      .footer-social__button {
+        background-color: #81b3d2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 48px;
+      }
+
+        .footer-social__button:hover,
+        .footer-social__button:focus {
+          background-color: #669ec0;
+        }
+
+        .footer-social__button:active {
+          background-color: #5496bd;
+          color: #88b6d1;
+          fill: #88b6d1;
+        }
+
+    .footer-social li:nth-last-of-type(1) {
+      margin-right: 0px;
+    }  
 
   .footer-copyright {
     display: flex;
     align-items: center;
     font-size: 14px;
-    
   }
 
     .footer-copyright__academy {
@@ -436,38 +436,9 @@ fieldset {
       justify-content: center;
       width: 115px;
       height: 41px;
+      
     }
 /* конец */
-
-.date {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid khaki;
-}
-
-.date input {
-  width: 346px;
-  height: 38px;
-}
-
-.adults {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.kids {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.quantity-human {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
 /* Блок "Заинтересовались" с кнопкой */
 
@@ -508,6 +479,16 @@ fieldset {
     border: none;
   }
 
+    .button__pop-up:focus,
+    .button__pop-up:hover {
+      background-color: #604e43;
+    }
+
+    .button__pop-up:active {
+      background-color: #503e33;
+      color: #857871;
+    }
+
 /* конец */
 
 .map {
@@ -521,26 +502,115 @@ fieldset {
   font-size: 14px;
 }
 
+/* Всплывающие окно */
+
 .pop-up {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  outline: 1px solid red;
   width: 568px;
-  height: 395px;
-}
-
-
-
-.button__find {
-  width: 458px;
-  height: 58px;
-  background-color: #81b3d2;
-  color: white;
+  font-size: 14px;
   font-weight: bold;
-  font-size: 21px;
-  border: none;
+  line-height: 26px;
+  height: 395px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+  .pop-up__inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 458px;
+    height: 285px;
+  }
+
+    .date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+      .date input {
+        width: 346px;
+        height: 38px;
+        background-color: #f2f2f2;
+        border: none;
+      }
+
+        .data input:focus {
+          background-color: black;
+        }
+
+      .date input::after {
+        content: url("../img/calendar.svg");
+        display: block;
+        margin-right: 10px;
+        
+      }
+
+    .quantity-human {
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .adults {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+      }
+    
+      .kids {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      }  
+    
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-left: 41px;
+        }
+
+          .button button {
+            height: 38px;
+            width: 38px;
+            background-color: #f2f2f2;
+            border: none;
+          }
+        
+          .button input {
+            height: 38px;
+            width: 38px;
+            background-color: #f2f2f2;
+            border: none;
+          }
+
+    .button__find {
+      width: 458px;
+      height: 58px;
+      text-transform: uppercase;
+      background-color: #81b3d2;
+      color: white;
+      font-weight: bold;
+      font-size: 21px;
+      border: none;
+    }
+
+      .button__find:hover,
+      .button__find:focus {
+        background-color: #669ec0;
+      }
+
+      .button__find:active {
+        background-color: #5496bd;
+        color: #88b6d1;
+      }
+
+/* конец     */
 
 /* Фото Седоны */
 
@@ -585,11 +655,12 @@ fieldset {
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 50px;
   }
 
     .container-tagline p:first-of-type {
       font-size: 21px;
-      padding-top: 60px;
       line-height: 26px;
       font-weight: bold;
     }
@@ -598,7 +669,6 @@ fieldset {
       font-size: 14px;
       padding-top: 27px;
       line-height: 26px;
-      padding-bottom: 50px;
     }
 
 /* конец */
@@ -638,29 +708,9 @@ fieldset {
   border: none;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  border: 1px solid blueviolet;
-}
 
-.button button {
-  height: 38px;
-  width: 38px;
-}
 
-.button input {
-  height: 32px;
-  width: 38px;
-}
 
-.pop-up__inside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 458px;
-  height: 285px;
-}
 
 .hotel-conditions__cost {
   display: flex;
