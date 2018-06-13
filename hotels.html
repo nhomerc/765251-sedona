@@ -41,27 +41,43 @@
         <form class="hotel-conditions">
           <fieldset>
             <legend>Инфраструктура: </legend>
-            <label>
-              <input type="checkbox" name="pool" id="pool-id"> Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking" id="parking-id"> Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wifi" id="wifi-id"> Wi-fi
-            </label>
+            <ul class="hotel-conditions__list">
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="pool" id="pool-id" class="hotel-conditions__checkbox"> Бассейн
+                </label>
+              </li>
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="parking" id="parking-id" class="hotel-conditions__checkbox"> Парковка
+                </label>
+              </li>
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="wifi" id="wifi-id" class="hotel-conditions__checkbox"> Wi-fi
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Тип жилья: </legend>
-            <label>
-              <input type="checkbox" name="hotel" id="hotel-id"> Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="motel" id="motel-id"> Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="apartment" id="apartment-id"> Апартаменты
-            </label>
+            <ul class="hotel-conditions__list">
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="hotel" id="hotel-id" class="hotel-conditions__checkbox"> Гостиница
+                </label>
+              </li>
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="motel" id="motel-id" class="hotel-conditions__checkbox"> Мотель
+                </label>
+              </li>
+              <li class="hotel-conditions__item">
+                <label>
+                  <input type="checkbox" name="apartment" id="apartment-id" class="hotel-conditions__checkbox"> Апартаменты
+                </label>
+              </li>
+            </ul>  
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (р):</legend>
@@ -101,15 +117,19 @@
           <div class="hotel-selection-direction">
             <ul class="hotel-selection-direction__order">
               <li>
-                  <span class="visually-hidden">по возрастанию</span>
+                <span class="visually-hidden">по возрастанию</span>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z" />
+                  </svg>
                 </a>
               </li>
               <li>
                 <span class="visually-hidden">по убыванию</span>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11" />
+                  </svg>
                 </a>
               </li>
             </ul>

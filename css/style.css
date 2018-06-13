@@ -372,24 +372,85 @@ h1, h2, h3, p, button, input, ul {
           }
 /* конец */
 
+/* Общее поле с  параметрами */
 .hotel-choose {
   background: url("../img/filter-background.jpg");
   width: 1200px;
   height: 217px;
 }
 
-.hotel-conditions {
+  .hotel-conditions {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 31px;
+    padding-left: 71px;
+    padding-right: 74px;
+  }
+
+    .hotel-conditions fieldset {
+      margin: 0;
+      padding: 0;
+      border: none;
+      /* box-sizing: border-box; */
+      min-height: 155px;
+      outline: 1px solid green;
+    }
+
+      .hotel-conditions legend {
+        line-height: 16px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 25px;
+      }
+/* конец */
+
+/* Дополнительные опции */
+.hotel-conditions__list {
+  margin: 0;
+  padding: 0;
   display: flex;
+  list-style: none;
+  width: 255px;
+  flex-direction: column;
   justify-content: space-between;
+  outline: 1px solid red;
 }
 
-fieldset {
-  width: 100%;
+  .hotel-conditions__item {
+    margin-bottom: 23px;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    outline: 1px solid fuchsia;
+  }
+
+  .hotel-conditions__item:last-child {
+    margin-bottom: 0;
+  }
+
+
+/* Граница цены */
+.value {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Сортировка и показ отелей  */
+  .hotel-conditions__cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .value button {
+    width: 133px;
+    height: 32px;
+  }
+/* конец */
+
+/* Показ кол-ва отелей и сортировка */
 .hotel-selection {
   display: flex;
   flex-direction: column;
@@ -397,8 +458,6 @@ fieldset {
   width: 1200px;
   height: 540px;
 }
-
-/* Показ кол-ва отелей и сортировка */
 
 .hotel-selection-option {
   display: flex;
@@ -500,14 +559,12 @@ fieldset {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  
 }
 
   .footer-social {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    
   }
 
     .footer-social li {
@@ -625,11 +682,6 @@ fieldset {
   width: 1200px;
   height: 474px;
   background: url(../img/map.png);
-}
-
-.picking label {
-  font-weight: bold;
-  font-size: 14px;
 }
 
 /* Всплывающие окно */
@@ -863,9 +915,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-fieldset {
-  height: 190px;
-}
 
 
 
@@ -873,33 +922,7 @@ fieldset {
 
 
 
-.hotel-conditions__cost {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.value {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.value button {
-  width: 133px;
-  height: 32px;
-}
-
-.hotel-conditions fieldset {
-  border: none;
- }
-
- .checkbox1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid tomato;
-}
 
 
