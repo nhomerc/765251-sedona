@@ -59,6 +59,20 @@ h1, h2, h3, p, button, input, ul {
         justify-content: center;
       }
 
+      .site-navigation .active {
+        color: #766357;
+      }
+
+      .site-navigation a:hover {
+        color: #81b3d2;
+      }
+
+      .site-navigation a:active {
+        color: #b2b2b2;
+      }
+
+      
+
 /* конец */
 
 /* Девиз на главной странице */
@@ -141,7 +155,6 @@ h1, h2, h3, p, button, input, ul {
     width: 1200px;
     min-height: 256px;
     background-color: #eeeeee;
-    /* padding-bottom: 20px; */
     padding-top: 45px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -389,13 +402,29 @@ fieldset {
       justify-content: flex-start;
       align-self: center;
       width: 100%;
+      color: #b2b2b2;
     }
 
       .hotel-selection-sorting__order li {
         margin-right: 30px;
       }
 
-      .hotel-selection-sorting__order li:nth-last-child(1) {
+        .hotel-selection-sorting__order a {
+          border-bottom: 1px dotted #81b3d2;
+          color: #b2b2b2;
+        }
+
+        .hotel-selection-sorting__order a:hover {
+          border-bottom: 1px dotted #81b3d2;
+          color: #81b3d2;
+        }
+        
+        .hotel-selection-sorting__order a:active {
+          border: none;
+          color: #000000;
+        }
+
+      .hotel-selection-sorting__order li:last-child {
         margin-right: 0px;
       }
 
@@ -465,8 +494,9 @@ fieldset {
           fill: #88b6d1;
         }
 
-    .footer-social li:nth-last-child() {
+    .footer-social li:last-child {
       margin-right: 0px;
+      
     }  
 
   .footer-copyright {
