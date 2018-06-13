@@ -251,17 +251,17 @@ h1, h2, h3, p, button, input, ul {
 
   /* Описание отеля */
 
-  .hotel-item {
-    display: flex;
-    justify-content: space-around;
-    min-height: 151px;
-    box-sizing: border-box;
-    padding-top: 31px;
-    padding-bottom: 31px;
-    padding-left: 72px;
-    padding-right: 73px;
-    border-top: 1px solid #e5e5e5;
-  }
+.hotel-item {
+  display: flex;
+  justify-content: space-around;
+  min-height: 151px;
+  box-sizing: border-box;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+  padding-right: 73px;
+  border-top: 1px solid #e5e5e5;
+}
 
   .hotel-item:nth-of-type(3) {
     border-bottom: 1px solid #e5e5e5;
@@ -289,6 +289,20 @@ h1, h2, h3, p, button, input, ul {
           font-size: 21px;
           line-height: 21px;
         }
+
+          .hotel-item-description a:hover {
+            color: #81b3d2;
+          }
+
+          .hotel-item-description a:active {
+            color: #b2b2b2;
+          }
+    
+    .hotel-item__value {
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+    }
 
         .hotel-rating-stars span{
           margin-right: 6px;
@@ -326,6 +340,15 @@ h1, h2, h3, p, button, input, ul {
           font-weight: bold;
           border: none;
         }
+
+          .hotel-item-button__more:hover {
+            background-color: #669ec0;
+          }
+
+          .hotel-item-button__more:active {
+            background-color: #5496bd;
+            color: #88b6d1;
+          }
         
         .hotel-item-button__booking {
           width: 142px;
@@ -338,6 +361,15 @@ h1, h2, h3, p, button, input, ul {
           margin-left: 6px;
           border: none;
         }
+
+          .hotel-item-button__booking:hover {
+            background-color: #604e43;
+          }
+
+          .hotel-item-button__booking:active {
+            background-color: #503e33;
+            color: #857871;
+          }
 /* конец */
 
 .hotel-choose {
@@ -441,6 +473,18 @@ fieldset {
       justify-content: space-between;
     }
 
+    .hotel-selection-direction__order li a {
+      fill: #cacaca;
+    }
+
+      .hotel-selection-direction__order li a:hover {
+        fill: #000000;
+      }
+
+      .hotel-selection-direction__order li a:active {
+        fill: #81b3d2;
+      }
+
 /* конец   */
 
 /* Подвал */
@@ -496,12 +540,16 @@ fieldset {
 
     .footer-social li:last-child {
       margin-right: 0px;
-      
-    }  
+    }
+    
+    .footer-social li:first-child {
+      margin-left: 33px;
+    }
 
   .footer-copyright {
     display: flex;
     align-items: center;
+    font-weight: bold;
     font-size: 14px;
   }
 
