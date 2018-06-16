@@ -77,12 +77,14 @@
             <legend>Стоимость в сутки (р):</legend>
             <div class="value">
               <div class="hotel-conditions__cost">
-                <div>
-                  <input type="text" value="ОТ">
-                  <input type="text" value="ДО">
-                </div>
-                <input type="range" min="0">
+                <label class="min-price">ОТ
+                  <input type="text" value="0" class="hotel-conditions__cost-input">
+                </label>
+                <label class="max-price">ДО
+                  <input type="text" value="3000" class="hotel-conditions__cost-input">
+                </label>
               </div>
+              <input type="range" min="0">
               <button type="button">ПОКАЗАТЬ</button>
             </div>
           </fieldset>
