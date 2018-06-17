@@ -10,6 +10,7 @@
 body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  background-color: white;
 }
 
 a {
@@ -647,6 +648,7 @@ h1, h2, h3, p, button, input, ul {
  */
 
 .hotel-choose {
+  background-color: #000000;
   background: url("../img/filter-background.jpg");
   width: 1200px;
   height: 217px;
@@ -716,8 +718,7 @@ h1, h2, h3, p, button, input, ul {
   transform: translateX(-65%);
   background:url("../img/checkbox-off.png") no-repeat top left;
   height: 23px;
-  width: 23px;
-  background-size: 100%;
+  width: 27px;
   cursor: pointer;
 }
 
@@ -726,7 +727,6 @@ h1, h2, h3, p, button, input, ul {
   height: 23px;
   width: 27px;
   display: inline-block;
-  background-size: 100%;
 }
 
 .hotel-conditions__checkbox:disabled ~ .hotel-conditions__label {
@@ -828,7 +828,7 @@ h1, h2, h3, p, button, input, ul {
 }
 
 .value button {
-  margin-top: 23px;
+  margin-top: 10px;
   width: 136px;
   height: 35px;
   cursor: pointer;
@@ -844,6 +844,48 @@ h1, h2, h3, p, button, input, ul {
   background-color: #ffffff;
   color: #000000;
 }
+
+/* ползунок */
+.input__range {
+  position: relative;
+  margin-top: 10px;
+	margin-bottom: 21px;
+} 
+
+.input__range .scale {
+	height: 2px;
+	background: rgba(255,255,255,0.3);
+}
+
+.input__range .bar {
+	width: 80%;
+	height: 2px;
+	background: rgb(255, 255, 255);
+}
+
+.range__toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: rgb(171, 171, 171);
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range__toggle:hover {
+	background: rgb(28, 79, 128);
+}
+
+.range__toggle-min {
+	left: 0;
+}
+
+.range__toggle-max {
+	left: 80%;
+}
+
 
 /* Выбор отеля */
 .hotel-list {
@@ -1088,6 +1130,16 @@ h1, h2, h3, p, button, input, ul {
   position: inherit;
   background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
