@@ -35,15 +35,13 @@
     </header>
 
     <main class="container">
-      <div class="container__photo">
+      <div class="intro-photo">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img src="img/sedona-logo.png">
       </div>
-      <div class="container__intro">
-        <div class="container__intro-tagline">
-          <p class="container__intro-tagline-main">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="container__intro-tagline-item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
+      <div class="tagline">
+        <p class="tagline__main">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="tagline__item">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="feature">
         <h2 class="visually-hidden">Преимущество</h2>
@@ -112,69 +110,67 @@
           <p class="picking__text">Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button type="button" class="picking__button-pop-up">Поиск гостиницы в Седоне</button>
-          <form class="ordering">
-            <div class="pop-up">
-              <div class="pop-up__inside">
-                <div class="date">
-                  <label for="arrival-date">Дата заезда:</label>
-                  <input type="text" name="arrival-date-input" id="arrival-date" class="arrival-date__input" placeholder="24 апреля 2017">
-                  <button type="button" class="calendar__button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
-                      />
-                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="date">
-                  <label for="departure-date">Дата выезда:</label>
-                  <input type="text" name="departure-date-input" id="departure-date" class="arrival-date__input" placeholder="4 июля 2017">
-                  <button type="button" class="calendar__button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                      <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
-                      />
-                      <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="quantity-human">
-                  <div class="adults">
-                    <label for="quantity-adults" class="quantity-adults__label">Взрослые</label>
-                    <div class="button">
-                      <button type="button" class="button__minus">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
-                          <path d="M0 0h9.917v1.917h-9.917z"></path>
-                        </svg>
-                      </button>
-                      <input type="text" name="quantity-adults" min="0" max="5" id="quantity-adults">
-                      <button type="button" class="button__plus">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                          <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="kids">
-                    <label for="quantity-kids" class="quantity-kids__label">Дети</label>
-                    <div class="button">
-                      <button type="button" class="button__minus">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
-                          <path d="M0 0h9.917v1.917h-9.917z"></path>
-                        </svg>
-                      </button>
-                      <input type="text" name="quantity-kids" min="0" max="5" id="quantity-kids">
-                      <button type="button" class="button__plus">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                          <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="button__find">Найти</button>
+          <form class="pop-up">
+            <div class="pop-up__inside">
+              <div class="date">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" name="arrival-date-input" id="arrival-date" class="arrival-date__input" placeholder="24 апреля 2017">
+                <button type="button" class="calendar__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
+                    />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"
+                    />
+                  </svg>
+                </button>
               </div>
+              <div class="date">
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" name="departure-date-input" id="departure-date" class="arrival-date__input" placeholder="4 июля 2017">
+                <button type="button" class="calendar__button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
+                    />
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="quantity-human">
+                <div class="adults">
+                  <label for="quantity-adults" class="quantity-adults__label">Взрослые</label>
+                  <div class="button">
+                    <button type="button" class="button__minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                        <path d="M0 0h9.917v1.917h-9.917z"></path>
+                      </svg>
+                    </button>
+                    <input type="text" name="quantity-adults" min="0" max="5" id="quantity-adults">
+                    <button type="button" class="button__plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                        <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="kids">
+                  <label for="quantity-kids" class="quantity-kids__label">Дети</label>
+                  <div class="button">
+                    <button type="button" class="button__minus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="3" viewBox="0 0 11 3">
+                        <path d="M0 0h9.917v1.917h-9.917z"></path>
+                      </svg>
+                    </button>
+                    <input type="text" name="quantity-kids" min="0" max="5" id="quantity-kids">
+                    <button type="button" class="button__plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                        <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button__find">Найти</button>
             </div>
           </form>
         </div>
