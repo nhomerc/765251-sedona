@@ -371,7 +371,9 @@ a {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
-  height: 395px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  /* height: 395px; */
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
@@ -384,6 +386,12 @@ a {
 .picking__button-pop-up:active {
   background-color: #503e33;
   color: #857871;
+}
+
+.map {
+  width: 1200px;
+  height: 593px;
+  background-image: url("../img/map.png");
 }
 
 /* Форма на первой странице */
@@ -1112,13 +1120,16 @@ a {
 
 .hotel-item__more {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
+  padding-left: 5px;
+  padding-left: 5px;
   background-color: #81b3d2;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
 
 .hotel-item__more:hover {
@@ -1132,7 +1143,9 @@ a {
 
 .hotel-item__booking {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
+  padding-left: 5px;
+  padding-left: 5px;
   background-color: #766357;
   color: #ffffff;
   text-transform: uppercase;
@@ -1140,6 +1153,7 @@ a {
   font-weight: bold;
   margin-left: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .hotel-item__booking:hover {
