@@ -1002,13 +1002,13 @@ a {
   margin-right: 0px;
 }
 
-.hotel-selection-direction {
+.hotel-selection__direction {
   display: flex;
   align-items: center;
   width: 34px;
 }
 
-.hotel-selection-direction__order {
+.hotel-selection__order {
   padding: 0;
   margin: 0;
   display: flex;
@@ -1017,15 +1017,15 @@ a {
   justify-content: space-between;
 }
 
-.hotel-selection-direction__order li a {
+.hotel-selection__order li a {
   fill: #cacaca;
 }
 
-.hotel-selection-direction__order li a:hover {
+.hotel-selection__order li a:hover {
   fill: #000000;
 }
 
-.hotel-selection-direction__order li a:active {
+.hotel-selection__order li a:active {
   fill: #81b3d2;
 }
 
