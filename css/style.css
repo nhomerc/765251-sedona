@@ -132,17 +132,17 @@ a {
 
 /* Основные достопримичательности */
 
-.feature-list-interior:first-of-type {
+.feature__wide:first-of-type {
   display: flex;
   justify-content: flex-start;
 }
 
-.feature-item-interior__photo img {
+.feature__photo img {
   height: 100%;
   object-fit: cover;
 }
 
-.feature-item-interior {
+.feature__container {
   display: flex;
   width: 400px;
   background-color: #81b3d2;
@@ -155,11 +155,11 @@ a {
   color: white;
 }
 
-.feature-item-interior:last-child {
+.feature__container:last-child {
   padding-top: 45px;
 }
 
-.feature-item-interior h3 {
+.feature__container h3 {
   padding: 0;
   margin: 0;
   font-size: 21px;
@@ -167,33 +167,33 @@ a {
   margin-bottom: 25px;
 }
 
-.feature-item-interior:first-child h3 {
+.feature__container:first-child h3 {
   align-self: center;
   max-width: 150px;
 }
 
-.feature-item-interior p {
+.feature__container p {
   align-self: center;
   max-width: 302px;
 }
 
-.feature-item-interior p {
+.feature__container p {
   padding: 0;
   margin: 0;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-.feature-item-interior p:nth-last-child(1) {
+.feature__container p:nth-last-child(1) {
   margin-bottom: 0px;
 }
 
-.feature-list-interior:last-of-type {
+.feature__wide:last-of-type {
   display: flex;
   justify-content: flex-end;
 }
 
-.feature-list-interior:last-of-type h3 {
+.feature__wide:last-of-type h3 {
   padding-top: 4px;
 }
 
