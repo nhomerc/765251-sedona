@@ -205,7 +205,7 @@ a {
   display: flex;
   list-style: none;
   text-align: center;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
 }
 
 .feature-list:last-of-type {
@@ -954,7 +954,7 @@ a {
   width: 163px;
 }
 
-.hotel-selection-sorting {
+.hotel-selection__sorting {
   display: flex;
   width: 856px;
   justify-content: flex-start;
@@ -1047,7 +1047,7 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotel-item-description {
+.hotel-item__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1057,14 +1057,14 @@ a {
   align-self: center;
 }
 
-.hotel-item-description div {
+.hotel-item__description div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
 }
 
-.hotel-item-description h3 {
+.hotel-item__description h3 {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -1072,11 +1072,11 @@ a {
   line-height: 21px;
 }
 
-.hotel-item-description a:hover {
+.hotel-item__description a:hover {
   color: #81b3d2;
 }
 
-.hotel-item-description a:active {
+.hotel-item__description a:active {
   color: #b2b2b2;
 }
 
@@ -1086,36 +1086,36 @@ a {
   width: 181px;
 }
 
-.hotel-rating-stars span {
+.hotel-item__stars span {
   margin-right: 6px;
 }
 
-.hotel-rating-stars span:nth-last-of-type(1) {
+.hotel-item__stars span:nth-last-of-type(1) {
   margin-right: 0px;
 }
 
-.hotel-item-description div p {
+.hotel-item__description div p {
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
 }
 
-.hotel-rating {
+.hotel-item__rating {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
   font-size: 14px;
 }
 
-.hotel-rating p {
+.hotel-item__rating p {
   margin: 0;
   padding: 0;
   text-align: center;
   width: 100%;
 }
 
-.hotel-item-button__more {
+.hotel-item__more {
   width: 110px;
   height: 27px;
   background-color: #81b3d2;
@@ -1126,16 +1126,16 @@ a {
   border: none;
 }
 
-.hotel-item-button__more:hover {
+.hotel-item__more:hover {
   background-color: #669ec0;
 }
 
-.hotel-item-button__more:active {
+.hotel-item__more:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
 
-.hotel-item-button__booking {
+.hotel-item__booking {
   width: 142px;
   height: 27px;
   background-color: #766357;
@@ -1147,11 +1147,11 @@ a {
   border: none;
 }
 
-.hotel-item-button__booking:hover {
+.hotel-item__booking:hover {
   background-color: #604e43;
 }
 
-.hotel-item-button__booking:active {
+.hotel-item__booking:active {
   background-color: #503e33;
   color: #857871;
 }
