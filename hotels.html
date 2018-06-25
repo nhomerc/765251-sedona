@@ -38,7 +38,7 @@
       <h1 class="visually-hidden">Подбор гостиницы</h1>
       <section class="hotel-choose">
         <h2 class="visually-hidden">Фильтр</h2>
-        <form class="hotel-conditions">
+        <form class="hotel-conditions" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
             <legend>Инфраструктура: </legend>
             <ul class="hotel-conditions__list">
@@ -78,10 +78,10 @@
             <div class="value">
               <div class="hotel-conditions__cost">
                 <label class="min-price">ОТ
-                  <input type="text" value="0" class="hotel-conditions__cost-input">
+                  <input type="text" value="0" class="hotel-conditions__cost-input" name="min-cost">
                 </label>
                 <label class="max-price">ДО
-                  <input type="text" value="3000" class="hotel-conditions__cost-input">
+                  <input type="text" value="3000" class="hotel-conditions__cost-input" name="max-cost">
                 </label>
               </div>
               <div class="input__range">

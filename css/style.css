@@ -7,6 +7,20 @@
   background-color: white;
 }
 
+@keyframes bounce {
+  0% {opacity: 0;}
+  10% {opacity: 0.1;}
+  20% {opacity: 0.2;}
+  30% {opacity: 0,3;}
+  40% {opacity: 0.4;}
+  50% {opacity: 0.5;}
+  60% {opacity: 0.6;}
+  70% {opacity: 0,7;}
+  80% {opacity: 0.8;}
+  90% {opacity: 0.9;}
+  100% {opacity: 1;}
+}
+
 body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -70,11 +84,14 @@ a {
 /* Фотография на главной странице */
 
 .intro-photo {
+  display: flex;
   min-height: 508px;
   position: relative;
   background-color: #a1abb2;
   background-image: url("../img/background photo.jpg");
   background-size: cover;
+  justify-content: center;
+  align-items: center;
   background-position: 0 -56px;
 }
 
@@ -90,10 +107,10 @@ a {
   z-index: 1;
 }
 
-.intro-photo img {
+/* .intro-photo img {
   margin-top: 76px;
   margin-left: 371px;
-}
+} */
 
 /* Девиз сайта */
 
@@ -364,7 +381,7 @@ a {
   z-index: 1;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   width: 568px;
@@ -1181,4 +1198,10 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.show {
+  display: flex;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
