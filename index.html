@@ -109,8 +109,8 @@
           <h2>Заинтересовались?</h2>
           <p class="picking__text">Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button type="button" class="picking__button-pop-up">Поиск гостиницы в Седоне</button>
-          <form class="pop-up" action="https://echo.htmlacademy.ru" method="POST">
+          <a href="order.html" class="picking__button-pop-up">Поиск гостиницы в Седоне</a>
+          <form class="show pop-up" action="https://echo.htmlacademy.ru" method="POST">
             <div class="pop-up__inside">
               <div class="date">
                 <label for="arrival-date">Дата заезда:</label>
@@ -145,7 +145,7 @@
                         <path d="M0 0h9.917v1.917h-9.917z"></path>
                       </svg>
                     </button>
-                    <input type="text" name="quantity-adults" min="0" max="5" id="quantity-adults" required>
+                    <input type="text" name="quantity-adults" id="quantity-adults" value="2" required>
                     <button type="button" class="button__plus">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
                         <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
@@ -161,7 +161,7 @@
                         <path d="M0 0h9.917v1.917h-9.917z"></path>
                       </svg>
                     </button>
-                    <input type="text" name="quantity-kids" min="0" max="5" id="quantity-kids">
+                    <input type="text" name="quantity-kids" id="quantity-kids" value="0">
                     <button type="button" class="button__plus">
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
                         <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>

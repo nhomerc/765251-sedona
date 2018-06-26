@@ -8,17 +8,39 @@
 }
 
 @keyframes bounce {
-  0% {opacity: 0;}
-  10% {opacity: 0.1;}
-  20% {opacity: 0.2;}
-  30% {opacity: 0,3;}
-  40% {opacity: 0.4;}
-  50% {opacity: 0.5;}
-  60% {opacity: 0.6;}
-  70% {opacity: 0,7;}
-  80% {opacity: 0.8;}
-  90% {opacity: 0.9;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0, 3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0, 7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -356,6 +378,7 @@ a {
 .picking__button-pop-up {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
@@ -363,6 +386,7 @@ a {
   min-height: 86px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 34px;
   background-color: #766357;
   color: white;
   font-weight: bold;
@@ -390,7 +414,6 @@ a {
   line-height: 26px;
   padding-top: 55px;
   padding-bottom: 55px;
-  /* height: 395px; */
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
