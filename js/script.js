@@ -33,3 +33,13 @@ buttonKidsMinus.addEventListener("click", function(evt) {
         inputKids.value = parseInt(document.getElementById("quantity-kids").value) - 1;
     } else {inputKids.value = parseInt(document.getElementById("quantity-kids").value)};
 })
+
+var inputArrivalDate = document.getElementById("arrival-date");
+popUp.addEventListener("submit", function(evt) {
+    if (!inputArrivalDate.value || !inputAdults.value) {
+        evt.preventDefault();
+        popUp.classList.remove("error");
+        popUp.classList.add("error");
+        console.log("error");
+    }
+})
