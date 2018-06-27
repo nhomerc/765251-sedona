@@ -3,6 +3,7 @@ var popUp = document.querySelector(".pop-up");
 popUp.classList.toggle("show");
 showHideButton.addEventListener("click", function(evt) {
     evt.preventDefault();
+    popUp.classList.remove("error");
     popUp.classList.toggle("show");
 })
 
@@ -39,7 +40,7 @@ popUp.addEventListener("submit", function(evt) {
     if (!inputArrivalDate.value || !inputAdults.value) {
         evt.preventDefault();
         popUp.classList.remove("error");
+        popUp.offsetWidth = popUp.offsetWidth;
         popUp.classList.add("error");
-        console.log("error");
     }
 })
