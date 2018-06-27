@@ -79,17 +79,38 @@
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
-    transform: translate(-50%, 100%);
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
     
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translate(-55%, 100%);
+    -webkit-transform: translate(-55%, 100%);
+            transform: translate(-55%, 100%);
     
   }
   20%, 40%, 60%, 80% {
-    transform: translate(-45%, 100%);
+    -webkit-transform: translate(-45%, 100%);
+            transform: translate(-45%, 100%);
+    
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
+    
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate(-55%, 100%);
+            transform: translate(-55%, 100%);
+    
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate(-45%, 100%);
+            transform: translate(-45%, 100%);
     
   }
 }
@@ -120,9 +141,15 @@ a {
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-navigation {
@@ -1158,7 +1185,9 @@ a {
 
 .range__toggle:hover {
   background: rgb(28, 79, 128);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .range__toggle-min {
@@ -1509,6 +1538,8 @@ a {
 }
 
 .error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
